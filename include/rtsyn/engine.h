@@ -54,6 +54,7 @@ typedef struct rtsyn_engine_config_e {
     rtsyn_spsc_telemetry_values_t *telemetry_values;
     rtsyn_engine_thread_config_t rt_thread;
     rtsyn_engine_thread_config_t wait_thread;
+    uint64_t deadline_tolerance_ns;
     uint32_t max_commands_per_cycle;
 } rtsyn_engine_config_t;
 
